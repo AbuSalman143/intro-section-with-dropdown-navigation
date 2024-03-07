@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+}
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --white:white;
+}
+
+
+body{
+    background: var(--Almost-White);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 35px ;
+    gap: 65px;
+    min-height: 100vh;
+    
+}
+header{
+    padding-top: 25px;
+    display: flex;
+    gap: 70px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* border: 2px solid red; */
+}
+.menu_bar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+ .navbar{
+   
+    width: 100%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    
+}
+ul li{
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    font-size: 16px;
+    font-weight: 600;
+}
+ul li:hover{
+    
+    color: var(--Almost-Black);
+}
+.Features-li,.Company-li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+}
+.Company-text-img,.Features-text-img{
+   
+    display: flex;
+    gap: 10px;
+}
+.Features-list li img{
+    
+    height: auto;
+}
+.Features-li img,.Company-li img{
+    height: 8px;
+}
+.company-list,.Features-list{
+     
+    
+    flex-direction: column;
+    padding: 15px 20px;
+    background: var(--white);
+    position: absolute;
+    top: 20px;
+    border-radius: 10px;
+    display: none;
+    
+}
+.Features-list{
+    
+    width:150px;
+    left: -60px;
+    gap: 20px;
+}
+.company-list{
+   width:120px;
+    gap: 20px;
+   
+    
+}
+.login-container{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    /* border: 2px solid black; */
+}
+#login{
+    background: none;
+    border: none;
+    color: var(--Medium-Gray);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#login:hover{
+    color: var(--Almost-Black);
+}
+#register{
+    background: none;
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--Medium-Gray);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -10px;
+   
+}
+#register:hover{
+    color: var(--Almost-Black);
+    border: 2px solid var(--Almost-Black);
+}
+.menu-container{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.close_menu{
+    display: none;
+}
+
+.arrow-up{
+    display: none;
+    cursor: pointer;
+}
+
+main{
+   
+    display: flex;
+    justify-content: space-around;
+    min-height:100vh ;
+    /* width: 90%; */
+    margin-left: 5%;
+    
+}
+
+main .content-container{
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+  gap: 15%;
+   padding-top: 100px;
+
+}
+
+main .content-container .content{
+    min-height: 70%;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 40px;
+}
+.heading h1{
+   
+    font-size: 76px;
+    letter-spacing: 3px;
+}
+.text{
+    color: var(--Medium-Gray);
+    text-align: justify;
+    width: 80%;
+    line-height: 25px;
+}
+.content button{
+    width: fit-content;
+    padding: 10px 20px;
+    color: var(--Almost-White);
+    background: var(--Almost-Black);
+    border: 2px solid var(--Almost-Black);
+    border-radius: 8px;
+    
+}
+.content button:hover{
+    cursor: pointer;
+    color: var(--Almost-Black);
+    background: none;
+    font-weight: 600;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+main .main-img{
+  width: 40%;
+}
+.desktop-img{
+    width: 100%;
+}
+
+.mobile-img{
+    display: none;
+}
+
+
+footer{
+   
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer .attribution a{
+    text-decoration: none;
+    font-weight: 800;
+    color: tomato;
+}
+
+
+
+
+
+
